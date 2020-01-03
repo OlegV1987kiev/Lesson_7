@@ -1,52 +1,59 @@
-import java.util.Scanner;
-
 public class Lesson_7_10 {
 
-    static class VeryStrictDiet {
+    public static void main(String[] args) {
 
+        days todayDays = days.MONDAY;
 
-        public enum DayOfWeek {
+        switch (todayDays) {
 
-            FRIDAY,
-            MONDAY,
-            SATURDAY,
-            SUNDAY,
-            THURSDAY,
-            TUESDAY,
-            WEDNESDAY
+            case SUNDAY:
 
-        }
+                System.out.println(1);
 
+                break;
 
-        public static void main(String[] args) {
+            case MONDAY:
 
-            System.out.println("Today = " + dayOfWeek);
-            System.out.println(holiday+ " is holiday");
-        }
+                System.out.println(2);
 
-            switch (dayOfWeek) {
+                break;
 
-                case DayOfWeek.SUNDAY:
-                    System.out.println(1);
-                case MONDAY:
-                    System.out.println(2);
-                case TUESDAY:
-                    System.out.println(3);
-                case WEDNESDAY:
-                    System.out.println(4);
-                case THURSDAY:
-                    System.out.println(5);
-                case FRIDAY:
-                    System.out.println(6);
-                case SATURDAY:
-                    System.out.println(7);
-                default:
-                    return;
-            }
+            case TUESDAY:
+
+                System.out.println(3);
+
+                break;
+
+            case WEDNESDAY:
+
+                System.out.println(4);
+
+                break;
+
+            case THURSDAY:
+
+                System.out.println(5);
+
+                break;
+
+            case FRIDAY:
+
+                System.out.println(6);
+
+                break;
+
+            case SATURDAY:
+
+                System.out.println(7);
+
+                break;
 
         }
 
     }
 
+    enum days {
+        SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY;
+}
 
 }
